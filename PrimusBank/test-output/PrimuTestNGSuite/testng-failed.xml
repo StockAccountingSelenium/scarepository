@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PrimuTestNGSuite]">
+  <parameter name="uid" value="Admin"/>
+  <parameter name="bname" value="Ameerpet"/>
+  <parameter name="un" value="john"/>
+  <parameter name="pwd" value="demo"/>
+  <test name="PrimusBankbranchpage(failed)">
+    <parameter name="bname" value="Ameerpet"/>
+    <parameter name="un" value="john"/>
+    <parameter name="pwd" value="demo"/>
+    <classes>
+      <class name="com.primusbank.testng.BankerLoginTest">
+        <methods>
+          <include name="check_banker_login" invocation-numbers="0"/>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- com.primusbank.testng.BankerLoginTest -->
+      <class name="com.primusbank.libraries.AdminHomePage">
+        <methods>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- com.primusbank.libraries.AdminHomePage -->
+      <class name="com.primusbank.testng.AdminLoginTest">
+        <methods>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- com.primusbank.testng.AdminLoginTest -->
+    </classes>
+  </test> <!-- PrimusBankbranchpage(failed) -->
+</suite> <!-- Failed suite [PrimuTestNGSuite] -->

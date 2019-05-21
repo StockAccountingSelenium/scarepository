@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48492" started-at="2019-04-02T07:26:48Z" finished-at="2019-04-02T07:27:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48492" started-at="2019-04-02T07:26:48Z" finished-at="2019-04-02T07:27:37Z">
+      <class name="com.primusbank.testng.BankerLoginDDT">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.primusbank.testng.BankerLoginDDT@7f9a81e8]" name="launchApp" is-config="true" duration-ms="7403" started-at="2019-04-02T12:56:41Z" finished-at="2019-04-02T12:56:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="bankerloginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.primusbank.testng.BankerLoginDDT@7f9a81e8]" name="bankerloginTest" duration-ms="2296" started-at="2019-04-02T12:56:51Z" data-provider="testdata" finished-at="2019-04-02T12:56:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ramesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ramesh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ameerpet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankerloginTest -->
+        <test-method status="PASS" signature="bankerloginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.primusbank.testng.BankerLoginDDT@7f9a81e8]" name="bankerloginTest" duration-ms="1653" started-at="2019-04-02T12:56:53Z" data-provider="testdata" finished-at="2019-04-02T12:56:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A1A1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ameerpet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankerloginTest -->
+        <test-method status="PASS" signature="bankerloginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.primusbank.testng.BankerLoginDDT@7f9a81e8]" name="bankerloginTest" duration-ms="1631" started-at="2019-04-02T12:56:55Z" data-provider="testdata" finished-at="2019-04-02T12:56:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B2B2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[B2B2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ameerpet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankerloginTest -->
+        <test-method status="FAIL" signature="bankerloginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.primusbank.testng.BankerLoginDDT@7f9a81e8]" name="bankerloginTest" duration-ms="20084" started-at="2019-04-02T12:56:57Z" data-provider="testdata" finished-at="2019-04-02T12:57:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B2B2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[B2B2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ameerpet]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: ameerpet
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'LAPTOP-U8Q0J0OL', ip: '192.168.1.216', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: ameerpet
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'LAPTOP-U8Q0J0OL', ip: '192.168.1.216', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:150)
+	at com.primusbank.libraries.PrimusBankHomePage.branchlogin(PrimusBankHomePage.java:41)
+	at com.primusbank.testng.BankerLoginDDT.bankerloginTest(BankerLoginDDT.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankerloginTest -->
+        <test-method status="FAIL" signature="bankerloginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.primusbank.testng.BankerLoginDDT@7f9a81e8]" name="bankerloginTest" duration-ms="20077" started-at="2019-04-02T12:57:17Z" data-provider="testdata" finished-at="2019-04-02T12:57:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: 
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'LAPTOP-U8Q0J0OL', ip: '192.168.1.216', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'LAPTOP-U8Q0J0OL', ip: '192.168.1.216', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:150)
+	at com.primusbank.libraries.PrimusBankHomePage.branchlogin(PrimusBankHomePage.java:41)
+	at com.primusbank.testng.BankerLoginDDT.bankerloginTest(BankerLoginDDT.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankerloginTest -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.primusbank.testng.BankerLoginDDT@7f9a81e8]" name="closeApp" is-config="true" duration-ms="150" started-at="2019-04-02T12:57:37Z" finished-at="2019-04-02T12:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.primusbank.testng.BankerLoginDDT -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
